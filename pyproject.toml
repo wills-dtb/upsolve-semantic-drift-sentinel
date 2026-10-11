@@ -1,0 +1,8 @@
+[project]
+name = "semantic-drift-sentinel"
+version = "0.1.0"
+description = "Small agent-style guardrail that turns business-context changes into semantic drift alerts and data-agent eval cases."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
