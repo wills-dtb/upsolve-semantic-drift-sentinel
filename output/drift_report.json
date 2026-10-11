@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-11T14:45:07.781174+00:00",
+  "decision": "BLOCK_AND_REVIEW",
+  "summary": {
+    "high": 1,
+    "medium": 0,
+    "total": 1
+  },
+  "findings": [
+    {
+      "metric": "Monthly Recurring Revenue",
+      "severity": "high",
+      "confidence": 0.99,
+      "current_definition": "Sum of active subscription recurring charges plus one-time onboarding fees recognized in the month.",
+      "candidate_update": "Finance update: effective October, MRR now excludes one-time onboarding fees.",
+      "evidence": "Finance update: effective October, MRR now excludes one-time onboarding fees. Those fees are non-recurring and should be reported separately going forward.",
+      "source_id": "#finance/2026-10-10/1842",
+      "reason": "Business context mentions the metric with change-language and materially differs from the active contract.",
+      "generated_evals": [
+        {
+          "id": "monthly_recurring_revenue_definition_grounding",
+          "question": "How is Monthly Recurring Revenue defined?",
+          "assertions": [
+            "answer cites the active semantic contract",
+            "answer does not blend superseded and current definitions",
+            "answer exposes effective-date ambiguity instead of guessing"
+          ]
+        },
+        {
+          "id": "monthly_recurring_revenue_historical_consistency",
+          "question": "Compare Monthly Recurring Revenue before and after the latest definition change.",
+          "assertions": [
+            "query applies the correct definition for each effective period",
+            "result labels any restatement or non-comparability"
+          ]
+        },
+        {
+          "id": "monthly_recurring_revenue_boundary_case",
+          "question": "Calculate Monthly Recurring Revenue for a record that sits on the newly changed inclusion boundary.",
+          "assertions": [
+            "boundary record follows the latest business rule",
+            "reasoning references the governing context source"
+          ]
+        }
+      ]
+    }
+  ]
+}

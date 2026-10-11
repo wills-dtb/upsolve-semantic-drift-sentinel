@@ -1,0 +1,20 @@
+{
+  "metrics": [
+    {
+      "name": "Monthly Recurring Revenue",
+      "aliases": ["MRR"],
+      "definition": "Sum of active subscription recurring charges plus one-time onboarding fees recognized in the month.",
+      "owner": "Finance",
+      "criticality": "critical",
+      "source": "semantic-registry:v17"
+    },
+    {
+      "name": "Active Customer",
+      "aliases": ["active customers", "customer count"],
+      "definition": "A customer with at least one paid subscription active at 23:59 UTC on the final calendar day of the month.",
+      "owner": "Revenue Operations",
+      "criticality": "high",
+      "source": "semantic-registry:v9"
+    }
+  ]
+}

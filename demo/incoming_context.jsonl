@@ -1,0 +1,2 @@
+{"source_type":"slack","source_id":"#finance/2026-10-10/1842","timestamp":"2026-10-10T16:42:00Z","text":"Finance update: effective October, MRR now excludes one-time onboarding fees. Those fees are non-recurring and should be reported separately going forward."}
+{"source_type":"notion","source_id":"revops/customer-metrics-v3","timestamp":"2026-10-11T08:15:00Z","text":"Active Customer remains a customer with at least one paid subscription active at the month-end UTC snapshot."}
